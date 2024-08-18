@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие приложения для кодинга</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff4d1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .header {
+            background-image: url('https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .app-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .app-list img {
+            margin-bottom: 0.5rem;
+            width: 48px;
+            height: 48px;
+        }
+        .app-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem; /* Основной размер шрифта для названий приложений */
+        }
+        .app-list a:hover {
+            text-decoration: underline;
+        }
+        .app-description {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem; /* Размер шрифта для описаний */
+            color: #666;
+            font-family: 'Arial', sans-serif; /* Убедитесь, что шрифт совпадает с основным */
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 15px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Прекрасные приложения и среды для кодинга</h1>
+    </div>
+    <div class="container">
+        <ul class="app-list">
+            <li>
+                <img src="https://code.visualstudio.com/favicon.ico" alt="Visual Studio Code">
+                <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a>
+                <p class="app-description">Популярный редактор кода с поддержкой расширений и интеграцией с Git, поддерживает множество языков программирования.</p>
+            </li>
+            <li>
+                <img src="https://www.sublimetext.com/favicon.ico" alt="Sublime Text">
+                <a href="https://www.sublimetext.com" target="_blank">Sublime Text</a>
+                <p class="app-description">Легкий и быстрый редактор кода с мощными функциями и поддержкой большого количества языков программирования.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAIVBMVEVHcExlWVxmWVxlWFxmWVxlWVxmWVxlWVxlWFxlWVtlWFtPalUdAAAAC3RSTlMATLV7NBz96c6aZfj73DcAAAEaSURBVHgBZc4xT8JQFIbhV2kjMlWJkDghJBi3GgkJW9WwFwIATlDw3OpkiF51c8AbRwdURwZp/Jlamk4823fynZzDpq1yDezzJomCKI99CfwkmsqxM9Qz/U7MFq9jm+Agek1WFQxkRS+N2GYMvYe03BYPcg6xlrxpeTo5TQ5dGhF51CKzGpDRoZFg7/DsW6sFROFPQea2h52vqiX6gx1xf59p0DJjlEM27BrVNA7tkOqcnloZ5Xy+sKXpB35VSv/l4jUXAValK1+3tkd2Ypl7IBMOQx92Q6vsQDzW7vr1LkB/Sn26fp1YccRAAXpJLLrD0iUwbhJH+NGNn8biOH+UkUVa3lZ6Qj1siE/Mqs5W5IxMSHSawFXZZcMfNQpL9/tz7agAAAAASUVORK5CYII=" alt="Atom">
+                <a href="https://atom.io" target="_blank">Atom</a>
+                <p class="app-description">Редактор кода с открытым исходным кодом, предоставляющий гибкие настройки и интеграцию с многочисленными плагинами.</p>
+            </li>
+            <li>
+                <img src="https://www.jetbrains.com/favicon.ico" alt="IntelliJ IDEA">
+                <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a>
+                <p class="app-description">Мощная интегрированная среда разработки для Java и других языков, предоставляющая обширные инструменты и функции.</p>
+            </li>
+            <li>
+                <img src="https://www.eclipse.org/favicon.ico" alt="Eclipse">
+                <a href="https://www.eclipse.org" target="_blank">Eclipse</a>
+                <p class="app-description">Открытая интегрированная среда разработки, поддерживающая широкий спектр языков программирования и расширений.</p>
+            </li>
+            <li>
+                <img src="https://netbeans.apache.org/favicon.ico" alt="NetBeans">
+                <a href="https://netbeans.apache.org/" target="_blank">NetBeans</a>
+                <p class="app-description">Открытая IDE с поддержкой Java, PHP, C++, и других языков, предлагающая удобный интерфейс и мощные функции для разработки.</p>
+            </li>
+            <li>
+                <img src="https://www.jetbrains.com/favicon.ico" alt="PyCharm">
+                <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a>
+                <p class="app-description">Интегрированная среда разработки для Python с поддержкой многих фреймворков и инструментов для повышения продуктивности.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/color/32/000000/ruby.png" alt="RubyMine">
+                <a href="https://www.jetbrains.com/rubyMine/" target="_blank">RubyMine</a>
+                <p class="app-description">IDE для разработки на Ruby и Ruby on Rails с мощными инструментами для отладки и тестирования.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/color/32/000000/webstorm.png" alt="WebStorm">
+                <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>
+                <p class="app-description">Современная IDE для веб-разработки с поддержкой JavaScript, TypeScript и множества других технологий.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/color/32/000000/xcode.png" alt="Xcode">
+                <a href="https://developer.apple.com/xcode/" target="_blank">Xcode</a>
+                <p class="app-description">IDE для разработки приложений под macOS и iOS с инструментами для проектирования и отладки приложений.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/color/32/000000/emacs.png" alt="Emacs">
+                <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a>
+                <p class="app-description">Многофункциональный текстовый редактор с возможностями настройки и расширения через собственный язык программирования.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/color/32/000000/notepad-plus-plus.png" alt="Notepad++">
+                <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>
+                <p class="app-description">Легкий текстовый редактор с поддержкой подсветки синтаксиса для множества языков программирования.</p>
+            </li>
+            <li>
+                <img src="https://www.jetbrains.com/favicon.ico" alt="CLion">
+                <a href="https://www.jetbrains.com/clion/" target="_blank">CLion</a>
+                <p class="app-description">IDE для разработки на C и C++, предлагающая современные инструменты для отладки и анализа кода.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/color/32/000000/code-blocks.png" alt="Code::Blocks">
+                <a href="http://www.codeblocks.org/" target="_blank">Code::Blocks</a>
+                <p class="app-description">Открытая IDE для C, C++ и Fortran с поддержкой плагинов и удобным интерфейсом для управления проектами.</p>
+            </li>
+            <li>
+                <img src="https://jupyter.org/favicon.ico" alt="Jupyter Notebook">
+                <a href="https://jupyter.org/" target="_blank">Jupyter Notebook</a>
+                <p class="app-description">Интерактивная среда для работы с данными и создания документов, содержащих живой код, уравнения и визуализации.</p>
+            </li>
+            <li>
+                <img src="https://www.jetbrains.com/favicon.ico" alt="GoLand">
+                <a href="https://www.jetbrains.com/go/" target="_blank">GoLand</a>
+                <p class="app-description">IDE для разработки на Go с поддержкой современного инструментария и интеграцией с системами контроля версий.</p>
+            </li>
+            <li>
+                <img src="https://www.activestate.com/favicon.ico" alt="KomodoIDE">
+                <a href="https://www.activestate.com/products/komodo-ide/" target="_blank">KomodoIDE</a>
+                <p class="app-description">IDE для разработки на множестве языков с интеграцией функций отладки, тестирования и контроля версий.</p>
+            </li>
+            <li>
+                <img src="https://www.jetbrains.com/favicon.ico" alt="Rider">
+                <a href="https://www.jetbrains.com/rider/" target="_blank">Rider</a>
+                <p class="app-description">IDE для .NET разработки с мощными инструментами для редактирования, отладки и тестирования кода.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAilBMVEUKERYKERUKABQKEBYKDxYMy0oMykoMzUsKChUM0EwMuUUKCBUMxkkLijcKGhkLai4LpT8KLx4KHRkLXCkLcjALsUMKRiQKNR8LmTwLbi8KQSMLoD4MwUcKHxkKJBsKKhwLZCwM1k4LfDMKVCcKLB0KRCQKUicLeTMKOiEMtEQLhDYKTCYLkToKWyo/lztcAAABbElEQVQokX2T25qCIBSFbQOCooKFmYpK01Gt93+9gZyKmr72Jb9rH5fB4ksEfmCGMQo+hAWszbsAAP9nyzrLe5nEG9O+Y9ZvhEhWICmNYsGYL+N53YIq1quEkpBETce9lGuxTfMDLFQqtcVR0d21iP+Mu+K6XjMMAGWa0DDa8L+6iE37rGRzIcTBJCSkBmYIK9kc1KMKgooQWgQ3Kc6qre684TE0NvHxJgV1lVXmjwZH23E6wyaFNPchXsSUSkCundPRVEsfIreLmLknXuvkzIMX2FiIHWS1HI7dq7IgZHBpAxhVudn5UtZrQpsZingyNfjdKjuKur3gvZCh6J9S3seEJOW8XZbH4UmWd8oDt4MLzFtBCyPOZmqtBzDmkFtG9PPbayik1unU2uON2jJiHj0gUKqglIY61qE9JyUVeKtm7SWixB6DOCMMuxcXIYZMQSIXdFAZvPkTAz+L8TJWB/TBm9Zl4IL76Nvv8AsmFBdOO0qvwQAAAABJRU5ErkJggg==" alt="Anaconda">
+                <a href="https://www.anaconda.com/" target="_blank">Anaconda</a>
+                <p class="app-description">Платформа для анализа данных и машинного обучения, включающая в себя пакетный менеджер и интегрированные среды для работы с Python.</p>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+                
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+                
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+                
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие музыкальные приложения</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff4d1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .header {
+            background-image: url('https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .app-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .app-list img {
+            margin-bottom: 0.5rem;
+            width: 48px;
+            height: 48px;
+        }
+        .app-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem; /* Основной размер шрифта для названий приложений */
+        }
+        .app-list a:hover {
+            text-decoration: underline;
+        }
+        .app-description {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem; /* Размер шрифта для описаний */
+            color: #666;
+            font-family: 'Arial', sans-serif; /* Убедитесь, что шрифт совпадает с основным */
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 15px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Лучшие музыкальные приложения</h1>
+    </div>
+    <ul class="app-list">
+        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAKlBMVEX////7+/vc3Nz4+Pje3t7h4eHk5OQAAADT09PW1tbZ2dnn5+fb29v8/PwmwdWPAAAATElEQVR4AWMYSkDIUBmITEKBwBEskN5WGb6kaHk5EJSCBbbPrko/WiR1BggWIglcAWtBCJRgaLnkAgSKGAIYWjAMxbAWw2GYTh9CAADzD0KzTw2h4wAAAABJRU5ErkJggg==" alt="Ableton Live">
+            <a href="https://www.ableton.com" target="_blank">Ableton Live</a>
+            <p class="app-description">Популярная цифровая аудиостанция (DAW), используемая для записи, редактирования и производства музыки.</p>
+        </li>
+        <li><img src="https://www.image-line.com/favicon.ico" alt="FL Studio">
+            <a href="https://www.image-line.com" target="_blank">FL Studio</a>
+            <p class="app-description">Мощная DAW с интерфейсом, ориентированным на создание электронной музыки, предоставляющая множество инструментов и эффектов.</p>
+        </li>
+        <li><img src="https://www.apple.com/favicon.ico" alt="Logic Pro X">
+            <a href="https://www.apple.com/logic-pro/" target="_blank">Logic Pro X</a>
+            <p class="app-description">Комплексная цифровая аудиостанция от Apple с расширенными возможностями для записи, редактирования и производства музыки.</p>
+        </li>
+        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAKlBMVEX////2297psLXloaf88vPgi5PHABHGAADJAB/WX2vPO0zwyMzOL0L019o4eJutAAAApElEQVR4AWMgAjAqGwkgeK7paWllITAec1lbeXlGugGUO719kYijVkUlhMeZ0Q2idrRNAHPNeyDCJ4pBJEtFA4TL0e4AJFnTN0C43GUBQJKtC2yzAgPDigQgQzwJxGWtucCgVghkAAkQN6PSASxhVgLhdhS5J8O5zBlt2UAuQnEp0BSEUZUOQAm4RSwbQBahOQPNkehewPQgwvuYgYMIOrSAJQwAy0Y0UDsValwAAAAASUVORK5CYII=" alt="Cubase">
+            <a href="https://new.steinberg.net/cubase/" target="_blank">Cubase</a>
+            <p class="app-description">Известная DAW с мощными функциями для создания, редактирования и микширования музыки, популярная среди профессионалов.</p>
+        </li>
+        <li><img src="https://www.avid.com/favicon.ico" alt="Pro Tools">
+            <a href="https://www.avid.com/pro-tools" target="_blank">Pro Tools</a>
+            <p class="app-description">Стандартная DAW для профессионального аудио и записи, используемая в студиях по всему миру.</p>
+        </li>
+        <li><img src="https://www.apple.com/favicon.ico" alt="GarageBand">
+            <a href="https://www.apple.com/mac/garageband/" target="_blank">GarageBand</a>
+            <p class="app-description">Бесплатная DAW от Apple для создания и записи музыки, идеальна для начинающих и любителей.</p>
+        </li>
+        <li><img src="https://www.reaper.fm/favicon.ico" alt="Reaper">
+            <a href="https://www.reaper.fm" target="_blank">Reaper</a>
+            <p class="app-description">Многофункциональная и гибкая DAW с мощными возможностями для записи, редактирования и микширования.</p>
+        </li>
+        <li><img src="https://www.presonus.com/favicon.ico" alt="Studio One">
+            <a href="https://www.presonus.com/products/Studio-One" target="_blank">Studio One</a>
+            <p class="app-description">DAW с интуитивно понятным интерфейсом и множеством профессиональных функций для создания музыки.</p>
+        </li>
+        <li><img src="https://img.icons8.com/?size=100&id=tJrnHUzbJPqf&format=png&color=000000" alt="BandLab">
+            <a href="https://www.bandlab.com" target="_blank">BandLab</a>
+            <p class="app-description">Онлайн-платформа для создания музыки с возможностью совместной работы и интеграцией с облачными хранилищами.</p>
+        </li>
+        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAYFBMVEVjGGZhE2RcAF9VAFiFWodaAF1QAFTJucr////DssRXAFuegKCYd5pgDmO6prtTAFaskq329PdNAFHk3OSxmbJ4RHpeCWJ9TX9lHmiQa5JvNXJsLm91P3jp4+mjh6VpKGyFZbcNAAAA1klEQVR4Ad3SwQ7CIBBFUWdw6JM6oG2lqlb//y8NGFXoomu9y76ThgRWi9FCfwV4vvA3MGupd1mbD7ANNq7c3QaNfQFpgS2XgLdAK0+gDvCBqoIHnGYgO+w7mmX32EkGpscgcyADepOBBQ4x2qoYD4BNQFeA4RFVIzuANIEjEPhUgxMH4JgABeAc+XIturCegUAZTLgJaSxSkhumJ3AeU0ezugleEsiHaF29uzYdIYH8C4yx3OMIePe+rB5NfVkNeksvoDzctQR6H1jfgFSqPX/6oWe/1APVUw+bmfBo1AAAAABJRU5ErkJggg==" alt="Soundtrap">
+            <a href="https://www.soundtrap.com" target="_blank">Soundtrap</a>
+            <p class="app-description">Онлайн-DAW, позволяющая создавать и записывать музыку в браузере с функциями для совместной работы.</p>
+        </li>
+        <li><img src="https://www.audacityteam.org/favicon.png" alt="Audacity">
+            <a href="https://www.audacityteam.org" target="_blank">Audacity</a>
+            <p class="app-description">Бесплатный и открытый аудио редактор для записи и редактирования звука, популярный среди начинающих пользователей.</p>
+        </li>
+        <li><img src="https://www.izotope.com/favicon.ico" alt="Ozone">
+            <a href="https://www.izotope.com/en/products/ozone.html" target="_blank">Ozone</a>
+            <p class="app-description">Пакет инструментов для мастеринга музыки, предоставляющий профессиональные решения для обработки и улучшения аудио.</p>
+        </li>
+        <li><img src="https://serato.com/favicon.ico" alt="Serato DJ">
+            <a href="https://serato.com/dj" target="_blank">Serato DJ</a>
+            <p class="app-description">Профессиональное программное обеспечение для DJ-инга, обеспечивающее контроль и управление музыкальными треками в реальном времени.</p>
+        </li>
+        <li><img src="https://www.native-instruments.com/favicon.ico" alt="Traktor Pro">
+            <a href="https://www.native-instruments.com/en/products/traktor/dj-software/traktor-pro-3/" target="_blank">Traktor Pro</a>
+            <p class="app-description">Мощное программное обеспечение для DJ-инга с расширенными возможностями для микширования и обработки треков.</p>
+        </li>
+        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAY1BMVEURJUoRJEkRIUYQGT8QFTwQFj0WWYIbg7Mdk8cems8RK1AQG0Ebf68hreYbgrMSLlIQEDgXYIohr+kfodgcjL4YaJMQDzgitvEad6UURmwQEzsUQWcZcp8VTXUVUnogqeEPAC/42J+KAAABAElEQVR4AbSQ4ZZGIBBAzShJZiWEwPf+T7nTscchuz/3/mmOe26q7L8BzIUQMkd4qzwrVKl1qYpKJtpUNV18NebubEvOua5nNA80+Jurx26aZZAiyOCXVY/qsnmtN28Qpa8aLxGNX/penA7n3WOWha104+jKwkKGYdvxx8Y1lFQPRTHUh0Y4v12g2n3wIVjrN1U97wINoikmpjVomuSiwM9wUISzxDFmpYOhKX+pGJ7QHyHVin5LQXLklsXxgpCGA/9Rfz6a913TNHBBqm174iGDV8iWictqHtIfDDmG4mTgEfJB3Fwxu0tTE3fUFhjfEQP3lB/cinMUPAb4Hi2TMgD5HxTBkTrX/gAAAABJRU5ErkJggg==" alt="Reason">
+            <a href="https://www.reasonstudios.com" target="_blank">Reason</a>
+            <p class="app-description">Профессиональная DAW с уникальным модульным интерфейсом и широким набором инструментов и эффектов для создания музыки.</p>
+        </li>
+        <li><img src="https://www.izotope.com/favicon.ico" alt="RX 9">
+            <a href="https://www.izotope.com/en/products/rx.html" target="_blank">RX 9</a>
+            <p class="app-description">Профессиональный инструмент для восстановления и обработки аудио, предлагающий продвинутые функции для очистки и улучшения звука.</p>
+        </li>
+        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAADyLBjyLBjvKBjxLBjyKxjvMCDyLBjvLBjyLBjyLBjxLBjyLBjyKxjvKxjvLBDyKxjvMBjxLBjxLBnyLRbzLBd5c8x8AAAAFnRSTlMAv/8gcKAQ70CQ4IDQYDAQsCB/71DP7nMLCQAAAQpJREFUeAF9klGShCAMRJs1LIoiss7c/6pL6BrAqtS8L5QArwkYuJ/OAgsZBR4Wv2FUrLDY6kwkHhZrLdhhMjQDviHP021NB4vlqGKJmicAqZ9HxsCr/6wZ62CbNtDo6aOZWTnrXPXr6prCykknaXl5apZ5izjd/s7/9I30/NNhATlpx70ovNzNkGQJTZM6HDEikXvq5cGTW8QX+mE9MaNmCPP0NL2eUQWur9AhKWOBQ+D1My7ZQIpqQv88X+0bBJyjCVdEXbKP7reCOF1pfklicY/xhmdaC06xsTA4mbipBaNivfsrUvyaMZFXRirsCrljRxcrTATtoEVIICjemncFgyLumCfjJXTCP7yxCWwoCvbBAAAAAElFTkSuQmCC" alt="ACID Pro">
+            <a href="https://www.magix.com/us/music/acid-pro/" target="_blank">ACID Pro</a>
+            <p class="app-description">DAW, предлагающая гибкие возможности для создания и редактирования музыки, с акцентом на обработку и микширование.</p>
+        </li>
+        <li><img src="https://www.nch.com.au/favicon.ico" alt="MixPad">
+            <a href="https://www.nch.com.au/mixpad/index.html" target="_blank">MixPad</a>
+            <p class="app-description">Программное обеспечение для микширования аудио, позволяющее легко работать с несколькими дорожками и применять эффекты.</p>
+        </li>
+    </ul>
+    
+    <div class="footer">
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+            </a>
+        </div>
+    </div>
+</body>
+</html>

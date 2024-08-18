@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие приложения для веб-разработки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff4d1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .header {
+            background-image: url('https://images.pexels.com/photos/14891540/pexels-photo-14891540.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .app-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .app-list img {
+            margin-bottom: 0.5rem;
+            width: 48px;
+            height: 48px;
+        }
+        .app-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem; /* Основной размер шрифта для названий приложений */
+        }
+        .app-list a:hover {
+            text-decoration: underline;
+        }
+        .app-description {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem; /* Размер шрифта для описаний */
+            color: #666;
+            font-family: 'Arial', sans-serif; /* Убедитесь, что шрифт совпадает с основным */
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 15px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Лучшие приложения для веб-разработки</h1>
+    </div>
+    <div class="container">
+        <ul class="app-list">
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=g9mmSxx3SwAI&format=png&color=000000" alt="Bootstrap">
+                <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
+                <p class="app-description">Популярный CSS-фреймворк для создания адаптивных веб-сайтов с готовыми компонентами и утилитами.</p>
+            </li>
+            <li>
+                <img src="https://reactjs.org/favicon.ico" alt="React">
+                <a href="https://reactjs.org" target="_blank">React</a>
+                <p class="app-description">Библиотека JavaScript для построения пользовательских интерфейсов с использованием компонентов и виртуального DOM.</p>
+            </li>
+            <li>
+                <img src="https://angular.io/assets/images/logos/angular/angular.png" alt="Angular">
+                <a href="https://angular.io" target="_blank">Angular</a>
+                <p class="app-description">Фреймворк для создания одностраничных приложений с использованием TypeScript и двустороннего связывания данных.</p>
+            </li>
+            <li>
+                <img src="https://vuejs.org/images/logo.png" alt="Vue.js">
+                <a href="https://vuejs.org" target="_blank">Vue.js</a>
+                <p class="app-description">Прогрессивный фреймворк для создания пользовательских интерфейсов и одностраничных приложений с фокусом на простоту и гибкость.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=qV-JzWYl9dzP&format=png&color=000000" alt="Django">
+                <a href="https://www.djangoproject.com" target="_blank">Django</a>
+                <p class="app-description">Фреймворк для разработки веб-приложений на Python, предоставляющий административную панель, ORM и готовые компоненты.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=3bzw1uhK78yO&format=png&color=000000" alt="Ruby on Rails">
+                <a href="https://rubyonrails.org" target="_blank">Ruby on Rails</a>
+                <p class="app-description">Фреймворк для веб-разработки на Ruby, ориентированный на разработку по принципу "сначала проектирование", с поддержкой MVC-паттерна.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=wDdo8EbcZiLM&format=png&color=000000" alt="Laravel">
+                <a href="https://laravel.com" target="_blank">Laravel</a>
+                <p class="app-description">Фреймворк для PHP с поддержкой MVC, миграций базы данных и современных инструментов разработки для создания веб-приложений.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=jpa398oAm0WY&format=png&color=000000" alt="Symfony">
+                <a href="https://symfony.com" target="_blank">Symfony</a>
+                <p class="app-description">Фреймворк для PHP, предлагающий модульную архитектуру, гибкость и интеграцию с другими инструментами и библиотеками.</p>
+            </li>
+            <li>
+                <img src="https://flask.palletsprojects.com/favicon.ico" alt="Flask">
+                <a href="https://flask.palletsprojects.com" target="_blank">Flask</a>
+                <p class="app-description">Микрофреймворк для Python, предоставляющий основные инструменты для создания веб-приложений без навязывания сложной структуры.</p>
+            </li>
+            <li>
+                <img src="https://expressjs.com/images/favicon.png" alt="Express.js">
+                <a href="https://expressjs.com" target="_blank">Express.js</a>
+                <p class="app-description">Минималистичный и гибкий фреймворк для Node.js, упрощающий создание серверных приложений и API.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=5veAj83Hacig&format=png&color=000000" alt="Meteor">
+                <a href="https://www.meteor.com" target="_blank">Meteor</a>
+                <p class="app-description">Платформа для создания веб-приложений в реальном времени с использованием JavaScript на клиенте и сервере.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=zGuJihUOHoUB&format=png&color=000000" alt="Gatsby">
+                <a href="https://www.gatsbyjs.com" target="_blank">Gatsby</a>
+                <p class="app-description">Фреймворк для создания статических сайтов на React с интеграцией источников данных и оптимизацией производительности.</p>
+            </li>
+            <li>
+                <img src="https://nextjs.org/static/favicon/favicon-32x32.png" alt="Next.js">
+                <a href="https://nextjs.org" target="_blank">Next.js</a>
+                <p class="app-description">Фреймворк для создания React-приложений с поддержкой серверного рендеринга и статической генерации.</p>
+            </li>
+            <li>
+                <img src="https://svelte.dev/favicon.png" alt="Svelte">
+                <a href="https://svelte.dev" target="_blank">Svelte</a>
+                <p class="app-description">Фреймворк для создания пользовательских интерфейсов, который компилирует компоненты в оптимизированный JavaScript-код.</p>
+            </li>
+            <li>
+                <img src="https://preactjs.com/favicon.ico" alt="Preact">
+                <a href="https://preactjs.com" target="_blank">Preact</a>
+                <p class="app-description">Библиотека для создания пользовательских интерфейсов, совместимая с React, но имеющая меньший размер и более высокую производительность.</p>
+            </li>
+            <li>
+                <img src="https://aurelia.io/styles/images/logo.svg" alt="Aurelia">
+                <a href="https://aurelia.io" target="_blank">Aurelia</a>
+                <p class="app-description">Фреймворк для создания модульных, тестируемых и расширяемых приложений на JavaScript и TypeScript.</p>
+            </li>
+            <li>
+                <img src="https://backbonejs.org/favicon.ico" alt="Backbone.js">
+                <a href="https://backbonejs.org" target="_blank">Backbone.js</a>
+                <p class="app-description">Библиотека для структурирования JavaScript-приложений, предоставляющая модели с синхронизацией на сервере и событиями.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=59925&format=png&color=000000" alt="Ember.js">
+                <a href="https://emberjs.com" target="_blank">Ember.js</a>
+                <p class="app-description">Фреймворк для создания амбициозных веб-приложений с предсказуемым и упрощенным процессом разработки.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=WoopfRcDj3RF&format=png&color=000000" alt="Tailwind CSS">
+                <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+                <p class="app-description">Утилитарный CSS-фреймворк для создания уникальных дизайнов без необходимости написания пользовательского CSS.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAUVBMVEUHTGYAS2QAS2UAQ1+drLX///+YqLGWp7D///75+fn9/Pzr7e7HztPM09d0jJkARmEAIEgAM1Te4uSOoKtCaXzU2t1gfY1qhJMvXXMAN1YAPltPxt56AAAAZUlEQVR4AdXRNQLAIAAEQdziLv9/aLCOCz3bTrmk0SjLUWwZS+VC5hQvURtrnU9qjF3vG8YJoevnxccJxHXTWqudIbTO+OQ4YZS+H3THefluBrF/Jp83iC/B1VFIObzVKaSipOU+DR0E+KNoRQYAAAAASUVORK5CYII=" alt="Foundation">
+                <a href="https://get.foundation" target="_blank">Foundation</a>
+                <p class="app-description">CSS-фреймворк для создания адаптивных веб-сайтов и приложений с набором компонентов и инструментов для проектирования.</p>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+                Telegram
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+                Instagram
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+                Discord
+            </a>
+        </div>
+    </div>
+</body>
+</html>

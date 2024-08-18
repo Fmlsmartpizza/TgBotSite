@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие приложения для безопасности</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff4d1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+            overflow-y: auto; /* Добавляем прокрутку по вертикали */
+        }
+        .header {
+            background-image: url('https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Замените на ваше изображение фона */
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px; /* Ограничиваем максимальную ширину контейнера */
+        }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 600px; /* Устанавливаем максимальную ширину для списка */
+        }
+        .app-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem; /* Добавляем отступ между элементами */
+            text-align: center; /* Выравнивание текста по центру */
+        }
+        .app-list img {
+            margin-bottom: 0.5rem; /* Отступ снизу */
+            width: 48px;
+            height: 48px;
+        }
+        .app-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem; /* Отступ снизу от названия */
+        }
+        .app-list .app-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        } 
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 15px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Лучшие приложения для безопасности</h1>
+    </div>
+    <div class="container">
+        <ul class="app-list">
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADMklEQVRYhbWXTYhOYRTHf3ObO/JZvC6NuPk4CjWb8bGQsFBsNBYWPoqyYmFGWVGIZKfMsFVSpFgYK2XlK4VsFGlOE9cYcY2JyMfdWNx783juc+877zvjv3l7/uc853/e+3yc87TQAJIo6AK2AKuAxcDMzDQKDAJPgdt+GPePNWbLGERrQB+wq5FkgdN+GB8bVwJJFJwDehoUzlHzw/hzPafWEuEZwAAwp0nxjaa4iGwH7qvqB9ux8AWSKJgPvK0I/gDoB54B7zOuHegEdgB3/DA+Yoib8Rao6lBpAtk//1IifAE47Ifx74rkChCRb8BUgwpU9VM+sJdgwBFjBOjww/i9w1ZP/K4lDnAa2F9IINtw9pq/9MN4RaPCmfhRYL1Fv1HV/SbRkonXgE+W84gfxrObFF8NPHaYpqjqD5Pwst8+h3NHk+JtJeLrTPEkCpaYCdiXzIVm1jzDCwd3SlUfGuILAQXwsuvVxuFmlEXkIrDEoh+p6glXkkkUdHmkd7uJB2VHTUQGRWRTiW07sM+if6rqWpNIouAhMDkbbvFIC4sJZyERkfvAIuCOiOy1bO3Adce05Zb4HsBMaJVHWtVMPHOI3wDWGdQlETlpjF85xPeq6muLG7bGi1v5W1JzuDbfdAd3XEQCYL7Dfk1VLzvmvLPGMz2HUwGquhn3UT0AbLW4IVXdOZa4kB7DUYtrL0mih7GV5mUVNjv2qEfayZjoLJutqn2A69jm2KCq3yvsduxBj7SNMlElgKreAlY6TGdU9V7VXEfspy3ZRXTTMkyqV3ZFZB4wRFpPnqjqmir/JAragF8Wvc0raSDPVgUDUNVhYBowUE+8LKYfxv15NbxCsR7MG0c9+AdJFLRTvAOu+mG8Oz+G3Y55zydCvCJWN2TV0A/jEaDXcqglUeCqbA0hi1Gz6N5Ms9ATfqDYFTXVkmWf/blD/KMfxnPzgX0TLnXEqgHDSRScz3ZyPeG2JArOk665LV7QmOi2vIt/i5aNBX4Yl7flRhLjfZjY+Ags9cP4q234n0+zHL1+GB8CEJFFwEHShuS2qvb/z8fpVaA73+05RGQhMAt4q6px3QSsZCb8ef4HMrwkvW0WieEAAAAASUVORK5CYII=" alt="Bitdefender">
+                <a href="https://www.bitdefender.com" target="_blank">Bitdefender</a>
+                <p class="app-description">Антивирусное ПО с высокой эффективностью защиты от угроз и кибератак.</p>
+            </li>
+            <li>
+                <img src="https://www.kaspersky.com/favicon.ico" alt="Kaspersky">
+                <a href="https://www.kaspersky.com" target="_blank">Kaspersky</a>
+                <p class="app-description">Популярное антивирусное решение с функциями защиты от вредоносных программ и фишинга.</p>
+            </li>
+            <li>
+                <img src="https://www.avast.com/favicon.ico" alt="Avast">
+                <a href="https://www.avast.com" target="_blank">Avast</a>
+                <p class="app-description">Антивирус и защитный пакет с функциями защиты от вирусов и интернет-угроз.</p>
+            </li>
+            <li>
+                <img src="https://www.mcafee.com/favicon.ico" alt="McAfee">
+                <a href="https://www.mcafee.com" target="_blank">McAfee</a>
+                <p class="app-description">Комплексное решение для защиты от вирусов, шпионских программ и других угроз.</p>
+            </li>
+            <li>
+                <img src="https://www.eset.com/favicon.ico" alt="ESET NOD32">
+                <a href="https://www.eset.com" target="_blank">ESET NOD32</a>
+                <p class="app-description">Эффективное антивирусное решение с низким потреблением системных ресурсов.</p>
+            </li>
+            <li>
+                <img src="https://www.malwarebytes.com/favicon.ico" alt="Malwarebytes">
+                <a href="https://www.malwarebytes.com" target="_blank">Malwarebytes</a>
+                <p class="app-description">Антишпионское ПО для защиты от вредоносных программ и онлайн-угроз.</p>
+            </li>
+            <li>
+                <img src="https://www.lastpass.com/favicon.ico" alt="LastPass">
+                <a href="https://www.lastpass.com" target="_blank">LastPass</a>
+                <p class="app-description">Менеджер паролей для безопасного хранения и управления паролями.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAoElEQVR4AWNwL/ChK8YqyGdq2w3E/6G0HJqcDhAHUNvCqWALEbgbSW4WTBzKlqOFhbPwyC2lt4WzaGbhqIX8pnbcoEREewsx5Y4DcSq1LOwmQW4ppRYiMj8iP06lsYWYeDBZOGrhqIUIOSgtRz8LEbib3hbOGkgLA+hqIbLF0AI8nxgLRyvgWdS1kHCdJwdKDFRptRGq83AkDh1SLaQrBgAuzmsPSMflVQAAAABJRU5ErkJggg==" alt="Dashlane">
+                <a href="https://www.dashlane.com" target="_blank">Dashlane</a>
+                <p class="app-description">Менеджер паролей с функциями защиты от утечек и анализом безопасности.</p>
+            </li>
+            <li>
+                <img src="https://1password.com/favicon.ico" alt="1Password">
+                <a href="https://1password.com" target="_blank">1Password</a>
+                <p class="app-description">Менеджер паролей с поддержкой двухфакторной аутентификации и хранения данных.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAY1BMVEXaOUDaNz7ZNDvXHCfdTVLgZGjbPkXZMTnZLzffXWL77e3////kfIDYIy3pnJ/YKTHYICr00NHdVFnsrK7sp6n88fLyxsfZMzrhbHDnkJLmi47lhYj55+jutbf33N3XFiLWCxsLutWAAAAAn0lEQVR4AcXR1QGFMAxA0QSnKe7O/ks+rYQyAOf31gtPQ+8H4c7zg/An8mO3JakgRcjs2jAgJi+AKyviAuQTa7po7FQvKWRjtR31Jg7jNM+LJVfadESfbsZBX2Ii1+6DcnRuEwPqibPbtkw38OTc07Ro85gVyB71XKlq9TUgQWAwIi7i0X2dKQHOFzymHnAY7e6H8FpGoRLrxrOnIDzrDaSzEBnvFS6OAAAAAElFTkSuQmCC" alt="NordVPN">
+                <a href="https://nordvpn.com" target="_blank">NordVPN</a>
+                <p class="app-description">VPN-сервис для защиты вашей конфиденциальности и безопасности в интернете.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEX////l4v3BuvvFvvzIwPzJwvzOx/3b1f78+/9lTvZ0X/h1Yfd4ZPh9aPl/a/mDbvqJdPuLdfu9sf1tWPeMePuRfPufjvxrVfeWh/mfkPuxpP1xW/j19P6Xhfvw7f7Szfy1qvzo5f1eRvXe2vxVPPRjTPZZQvVTPNR/c8VKMbYiAIxLL804DK9JI8VUNspFHcdWMeBgP+FdNPgnynATAAAAvUlEQVR4AcXQRZaEMAAAURzibu3ufv+7jWt4WXdtkA+x7HnlRVlWdV03Tdv1sAQQYUIZF0LIGCuFybtxbYyxMTqMvbc2eGaMHsSIhp93o7E2bBLNOXRftxOmefUPp2Pvv++14LMsFeUsiTVmpMniRvO3cgkphV1EOVsA4JyChKg6suXKqSGEECEIekcEgAOLxXq9dj6Prd247W4yeivrVy72hy5LVB73pzSeL9c03u63JBaPzSOJrQ02wif1CtL9DX0v3UvGAAAAAElFTkSuQmCC" alt="KeePass">
+                <a href="https://keepass.info" target="_blank">KeePass</a>
+                <p class="app-description">Бесплатный менеджер паролей с поддержкой расширений и мощными функциями защиты.</p>
+            </li>
+            <li>
+                <img src="https://www.veracrypt.fr/favicon.ico" alt="VeraCrypt">
+                <a href="https://www.veracrypt.fr" target="_blank">VeraCrypt</a>
+                <p class="app-description">Инструмент для создания зашифрованных виртуальных дисков и защиты данных.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAANlBMVEVHcEzLGSTMGiXSGybQGybPGiXHGSTQGibRGybNGibSGybGGCPTGybLGiXPGiXLGiXNGiXLGiTYbIjtAAAAEnRSTlMALXSkuYIf0v//5g70/5FMXTu68DeNAAABBElEQVR4AW2RVwLDIAxDzYplVsj9L1ubttn6yXggC0EXOR9iTAs9tSSGqJCVlgsqqaKpRJp0onSma4aBr5ioh4OlL/pulUo0sE/uP0fUzDEyqxPCwaQB3Ff3H7WhLrsn2F8COkiaWdAkD0NXyHaGLDUpusNmvgHxpZINDYO26p/oO6tT2uhNXmG0Ekt0D9ghwtMB8QG5iWQiV6Xh7r1UhWxpZ9VXDflD665fYRSlYYa2t3F3bbM/FoN1PcEkCrHaMogJ7oDKxOqbVcm8zEGXK9SRk+ZJpe+9ttPxHNvaBp5O3uac8yegqdCLpejM6ZK+Z1H+drcTj5gBQe6O3lTc8D2EP/0Ae+8NKCPdEHoAAAAASUVORK5CYII=" alt="Panda Security">
+                <a href="https://www.pandasecurity.com" target="_blank">Panda Security</a>
+                <p class="app-description">Антивирусное ПО с функциями защиты от вредоносных программ и защиты данных.</p>
+            </li>
+            <li>
+                <img src="https://www.comodo.com/favicon.ico" alt="Comodo">
+                <a href="https://www.comodo.com" target="_blank">Comodo</a>
+                <p class="app-description">Решение для защиты от вирусов и сетевых угроз с функциями брандмауэра.</p>
+            </li>
+            <li>
+                <img src="https://www.zonealarm.com/favicon.ico" alt="ZoneAlarm">
+                <a href="https://www.zonealarm.com" target="_blank">ZoneAlarm</a>
+                <p class="app-description">Брандмауэр и антивирусное ПО для защиты вашей сети и данных.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+            </a>
+        </div>
+    </div>
+</body>
+</html>

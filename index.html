@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Откройте для себя лучшие приложения в различных категориях. Подборки инструментов для дизайна, программирования, продуктивности и многих других задач.">
+    <meta name="keywords" content="приложения, дизайн, программирование, продуктивность, веб-разработка, обработка видео, музыкальная продукция, 3D моделирование, безопасность, обучение, электронная коммерция">
+
+    <title>Категории приложений</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #0026fcb0; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    background: url('https://images.pexels.com/photos/23475/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+    color: #fff;
+    padding: 90px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: -1; /* Помещаем фон за текст */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.header p {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.category {
+    background: #ffffff; /* Белый фон для блоков */
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень для выделения */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.category img {
+    width: 70px;
+    height: 70px;
+}
+
+.category a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.category a:hover {
+    color: #007bff;
+}
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.footer a img {
+    width: 24px; 
+    height: 24px; 
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Категории приложений</h1>
+        <p>Найдите идеальные инструменты для всех видов задач и проектов! Можете подписаться на наши соц-сети чтобы следить за нашими новостями</p>
+        
+    </div>
+    
+    <div class="container">
+        <div class="category">
+            <img src="https://img.icons8.com/color/48/design--v1.png" alt="3D icon"> 
+            <a href="design.html">Дизайн</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/fluency/48/online-coding.png" alt="Design icon"> 
+            <a href="coding.html">Программирование</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/color/48/tasklist.png" alt="Design icon"> 
+            <a href="tasks.html">Продуктивность</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/color/48/backend-development--v1.png" alt="Design icon"> 
+            <a href="webdev.html">Веб-разработка</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/color/48/video-trimming.png" alt="Programming icon"> 
+            <a href="videoediting.html">Обработка видео</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/color/48/music.png" alt="Music icon"> 
+            <a href="music.html">Музыкальная продукция</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/?size=100&id=65231&format=png&color=000000" alt="Music icon"> 
+            <a href="3d.html">3D Моделирование</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/?size=100&id=16238&format=png&color=000000" alt="Music icon"> 
+            <a href="security.html">Безопасность</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/?size=100&id=6eqd76mdaKPI&format=png&color=000000" alt="Music icon"> 
+            <a href="educ.html">Обучение</a>
+        </div>
+        <div class="category">
+            <img src="https://img.icons8.com/color/48/online-store.png" alt="Music icon"> 
+            <a href="commer.html">Электронная коммерция</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Следите за нами:</p>
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+                Telegram
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+                Instagram
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+                Discord
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>

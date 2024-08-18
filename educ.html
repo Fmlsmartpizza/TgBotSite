@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие приложения для обучения</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .header {
+            background-image: url('https://images.pexels.com/photos/5088017/pexels-photo-5088017.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .app-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .app-list img {
+            margin-bottom: 0.5rem;
+            width: 48px;
+            height: 48px;
+        }
+        .app-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem; /* Основной размер шрифта для названий приложений */
+        }
+        .app-list a:hover {
+            text-decoration: underline;
+        }
+        .app-description {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem; /* Размер шрифта для описаний */
+            color: #666;
+            font-family: 'Arial', sans-serif; /* Убедитесь, что шрифт совпадает с основным */
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 15px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Лучшие приложения для обучения</h1>
+    </div>
+    <div class="container">
+        <ul class="app-list">
+            <li>
+                <img src="https://www.coursera.org/favicon.ico" alt="Coursera">
+                <a href="https://www.coursera.org" target="_blank">Coursera</a>
+                <p class="app-description">Платформа для онлайн-курсов от ведущих университетов и компаний.</p>
+            </li>
+            <li>
+                <img src="https://img.icons8.com/?size=100&id=SrnrBzTNf9el&format=png&color=000000" alt="Udemy">
+                <a href="https://www.udemy.com" target="_blank">Udemy</a>
+                <p class="app-description">Большой выбор курсов по самым различным темам от профессионалов.</p>
+            </li>
+            <li>
+                <img src="https://www.edx.org/favicon.ico" alt="edX">
+                <a href="https://www.edx.org" target="_blank">edX</a>
+                <p class="app-description">Образовательная платформа, предлагающая курсы от университетов и колледжей.</p>
+            </li>
+            <li>
+                <img src="https://www.khanacademy.org/favicon.ico" alt="Khan Academy">
+                <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a>
+                <p class="app-description">Бесплатное образование и ресурсы по многим предметам.</p>
+            </li>
+            <li>
+                <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn Learning">
+                <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
+                <p class="app-description">Платформа с обучающими курсами от экспертов и профессионалов.</p>
+            </li>
+            <li>
+                <img src="https://www.skillshare.com/favicon.ico" alt="Skillshare">
+                <a href="https://www.skillshare.com" target="_blank">Skillshare</a>
+                <p class="app-description">Курсы по креативным дисциплинам, таким как дизайн, фотография и многое другое.</p>
+            </li>
+            <li>
+                <img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg" alt="Duolingo">
+                <a href="https://www.duolingo.com" target="_blank">Duolingo</a>
+                <p class="app-description">Изучение языков в игровой форме с помощью интерактивных уроков.</p>
+            </li>
+            <li>
+                <img src="https://www.codecademy.com/favicon.ico" alt="Codecademy">
+                <a href="https://www.codecademy.com" target="_blank">Codecademy</a>
+                <p class="app-description">Онлайн-курсы по программированию и разработке программного обеспечения.</p>
+            </li>
+            <li>
+                <img src="https://www.memrise.com/favicon.ico" alt="Memrise">
+                <a href="https://www.memrise.com" target="_blank">Memrise</a>
+                <p class="app-description">Платформа для изучения языков и запоминания информации с помощью различных техник.</p>
+            </li>
+            <li>
+                <img src="https://www.pluralsight.com/favicon.ico" alt="Pluralsight">
+                <a href="https://www.pluralsight.com" target="_blank">Pluralsight</a>
+                <p class="app-description">Платформа с техническими курсами для профессионалов в IT-сфере.</p>
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAANlBMVEVHcEwgFf8gFf8gFf8gFf8gFf8gFf8gFf8gFf8gFf8gFf8gFP8gFf8gFf8gFf8gFf8gFf8fFP+5rT4KAAAAEnRSTlMAbuQ8pLELSPf/fCbWWcWYhBUywuzcAAAAv0lEQVR4Ad3RQRKDIBBE0QYI8mXEeP/Lpiw0I5Ub5G9cPGkW6C7EpKn8KhotFVjkrQA6awYWcdwq9IEZCLIvJoOYBGMgS44rEKQCimBNT9zp0kDYpBlZHcsPvv8MD6rjizBhwhwDfcI32bFAeyIsqhwaZeL1Xc9biJKRdMUYNjYpQztH9hsb1E0CpTgeK4HujghEqHDtGVnfwsnA7mOrvFP74X/jZ1uFOBZd2VPRsXUgaK4ZMF02lXarxB6Knn0APZEME29QFiwAAAAASUVORK5CYII=" alt="Udacity">
+                <a href="https://www.udacity.com" target="_blank">Udacity</a>
+                <p class="app-description">Онлайн-курсы по программированию и технологиям от лидеров отрасли.</p>
+            </li>
+            <li>
+                <img src="https://www.futurelearn.com/favicon.ico" alt="FutureLearn">
+                <a href="https://www.futurelearn.com" target="_blank">FutureLearn</a>
+                <p class="app-description">Курсы и программы от университетов и учреждений по всему миру.</p>
+            </li>
+            <li>
+                <img src="https://www.masterclass.com/favicon.ico" alt="MasterClass">
+                <a href="https://www.masterclass.com" target="_blank">MasterClass</a>
+                <p class="app-description">Обучение от известных экспертов в различных областях.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+                
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+                
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+                
+            </a>
+        </div>
+    </div>
+</body>
+</html>

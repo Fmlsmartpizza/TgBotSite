@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие приложения для 3D</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff4d1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+        .header {
+            background-image: url('https://images.pexels.com/photos/8817543/pexels-photo-8817543.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+        .app-list li {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .app-list img {
+            margin-bottom: 0.5rem;
+            width: 48px;
+            height: 48px;
+        }
+        .app-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1rem; /* Основной размер шрифта для названий приложений */
+        }
+        .app-list a:hover {
+            text-decoration: underline;
+        }
+        .app-description {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem; /* Размер шрифта для описаний */
+            color: #666;
+            font-family: 'Arial', sans-serif; /* Убедитесь, что шрифт совпадает с основным */
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 15px;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+        @media (max-width: 768px) {
+        .header {
+            padding: 60px 10px; /* Уменьшите отступы для меньших экранов */
+            font-size: 2em; /* Уменьшите размер шрифта заголовка для меньших экранов */
+        }
+        .header h1{
+            padding: 60px 10px; /* Уменьшите отступы для меньших экранов */
+            font-size: 1.5em; /* Уменьшите размер шрифта заголовка для меньших экранов */
+        }
+
+        .container {
+            max-width: 100%; /* Убедитесь, что контейнер занимает всю ширину экрана */
+            padding: 10px; /* Уменьшите внутренние отступы */
+        }
+
+        .app-list {
+            max-width: 100%; /* Убедитесь, что список приложений занимает всю ширину контейнера */
+            padding: 0 10px; /* Добавьте отступы по бокам */
+        }
+
+        .app-list li {
+            padding: 0.5rem; /* Уменьшите отступы для меньших экранов */
+            margin-bottom: 0.5rem; /* Уменьшите расстояние между элементами */
+        }
+
+        .app-list img {
+            width: 36px; /* Уменьшите размер иконок для меньших экранов */
+            height: 36px;
+        }
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Лучшие приложения для 3D</h1>
+    </div>
+    <ul class="app-list">
+        <li><img src="https://img.icons8.com/?size=100&id=65231&format=png&color=000000" alt="Blender">
+            <a href="https://www.blender.org" target="_blank">Blender</a>
+            <p class="app-description">Профессиональное программное обеспечение для создания 3D графики, анимации и визуальных эффектов с открытым исходным кодом.</p>
+        </li>
+        
+        <li><img src="https://www.autodesk.com/favicon.ico" alt="Autodesk Maya">
+            <a href="https://www.autodesk.com/products/maya/overview" target="_blank">Autodesk Maya</a>
+            <p class="app-description">Мощная платформа для 3D-моделирования, анимации и рендеринга, используемая в кино, телевидении и геймдеве.</p>
+        </li>
+        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAIVBMVEVHcEySlJWSlJWSlJWSlJWSlJWSlJWSlJWSlJWSlJWSlJVMwduZAAAAC3RSTlMA/ulaF9mKqkouw/dB7q4AAAD2SURBVCiRbZJXggQhCERNGLj/gbcIKu0sHzMtT5ACUjo2+5SflX5tVaaaUiWuL251lFwE4m/UFtHslHMmSasffR68OsOTucPT9vfyjFxwLH4bWfTImlsTZb7v4Hb2R6QE2AglriEeKc9hOQqWBUaYXYFq+sAy1AMFpikzlwurqyFFuFQjTG1ZjKSHpi8UgZrbNL0QdSI1W80Bql7EQt+wXqAzBol2Iy9EBTJAjHd3LkDoldGndpsaYPRP7Y7DNuMu4AVR5xCnMKNlE+xVoDWw9JvUukO4Qzb5uEa+DdvoWcDTWu17emwP8lnMTzD9u/Fa2Bgzhv0BousG/yP/A3IAAAAASUVORK5CYII=" alt="Unity">
+            <a href="https://unity.com" target="_blank">Unity</a>
+            <p class="app-description">Популярный движок для разработки 2D и 3D игр, который предоставляет мощные инструменты для создания интерактивных приложений и визуализаций.</p>
+        </li>
+        
+        <li><img src="https://www.unrealengine.com/favicon.ico" alt="Unreal Engine">
+            <a href="https://www.unrealengine.com" target="_blank">Unreal Engine</a>
+            <p class="app-description">Разработанный Epic Games движок для создания игр и интерактивного контента, известный своим качеством графики и возможностями кастомизации.</p>
+        </li>
+        
+        <li><img src="https://www.3ds.com/favicon.ico" alt="Dassault Systèmes">
+            <a href="https://www.3ds.com" target="_blank">Dassault Systèmes</a>
+            <p class="app-description">Комплекс программных решений для 3D-дизайна, инженерии и управления жизненным циклом продукта, поддерживающий инновационные процессы и коллаборацию.</p>
+        </li>
+        
+        <li><img src="https://img.icons8.com/color/48/zbrush.png" alt="ZBrush">
+            <a href="https://pixologic.com/zbrush/" target="_blank">ZBrush</a>
+            <p class="app-description">Профессиональный инструмент для цифровой скульптуры и текстурирования, известный своей способностью создавать детализированные модели и текстуры.</p>
+        </li>
+        
+        <li><img src="https://img.icons8.com/?size=100&id=69EdmKEwu7JV&format=png&color=000000" alt="SketchUp">
+            <a href="https://www.sketchup.com" target="_blank">SketchUp</a>
+            <p class="app-description">Простой в использовании инструмент для 3D-моделирования, часто используемый для проектирования архитектуры и интерьеров.</p>
+        </li>
+        
+        <li><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAABAUGAgMHAf/EADAQAAIBAwMCBQIFBQEAAAAAAAECAwAEEQUSITFBBhMUIlFhsWJxgZHRMkKhweEj/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EACARAAMAAQMFAQAAAAAAAAAAAAABAgMREiETMVGR8AT/2gAMAwEAAhEDEQA/AO40m07kkE7cddvP505Ski4klbcAM9hz0H/aAy85o4oywJyxU/Pf+KYVgygqcg96Qnc5ijbdkAu2OoPb/dZ2jiO5e3G7aRvTOfnn7j96AdooooAooooBBomadyyk+7rszkY4GaBkN7jlV5Kkc0/WuaISpjO09mHagIu5vIwGdAZnJwNvTPxn6Y6dfpWq0aWMi9nlDFOGVeFWM9cfPQHP07c0vqwUL5TExvJOqIA+MM/tOPgZ2t+tV+21vWrUx2GpaY8MoBBncHZJzgAYz7jjOOmBnNAdForn1vqsdpcrDqss1nDnCxO8km4fhRQR/Hx0qavPEE10qraRyW0Mhwkjr/7TfSNO35t0+O9AWH1UJufTh8y4yVHO38/iilNHsPSQ7pFCyt1XO7bnnGe5PUnuf0ooCRoqm2Xj2G51ldONmo3301khjukeQNGXyzR/1Kh2HntkfNN6Z410/UtLtLuD2zT+lL28hZDGJ2CrglcNzkZHBIIyKAlNa0S01i1lgugw8xQNysQRjOPv9vgVStQs9W8O+VPf3l5qlvZlvJMmHZY2xk5xliNv92TjP62yLxfoEqTOmpR7IYzIzMjKCobYSpI92G9vGeSB1ol8Q6HcWSySXQaGRmXaYnDoUxu3Ljcm3IySBjIqNpcs1M1T0lashtRew8Q+GHurM75Y1863fGDvHQjPUEjH7irBo2jpYgTzkS3jLhpD/b+Ffgff/Ar9hp/hvStVvblb1lKlpZYhlYfbtycY2lgcE7fkZHSrCviDS2nih9ViSXbtDIwwWOFBJHtJxwDjPapvnyb6GXvtfolKKiE8RWM5j9J5s6yOFDLEwGD0IJAyD2IzmiqqTJWK54paFfj0Nbadbi1sL+O8t9QnnSRJUBnSZmaRGO3HlncvB5yBg+3NYWPhqBfTxm11BFsoLWCIl1PmLaS+ZEeUHLE8/TpjrRRVOZhN4btHgt4zZ6yDb27QRspQMmZkmDjjBZXjXHbAOQelboNGNvIWjbV49RmaaSW8zFunLKu4HCbVGI0UEKMYHfOSio0nwzUXUPdJ7c+HYHjvp4rK8LXZljaMiMMvmcu6uVLHpwCcZOOmKaurH1Gpm5a01JUmeOaaBNnlySR7dhJxkdB3A9ozxmiis9OfB2f6sz7198kNeFtKisJrqaOK8iaYLuWdI0B5Y5wgALc8t16UUUVpJJaI5ZMlZK3U9Wf/2Q==" alt="Rhinoceros">
+            <a href="https://www.rhino3d.com" target="_blank">Rhinoceros</a>
+            <p class="app-description">Программное обеспечение для 3D-моделирования с мощными инструментами для создания сложных и точных моделей.</p>
+        </li>
+        
+        <li><img src="https://www.autodesk.com/favicon.ico" alt="3ds Max">
+            <a href="https://www.autodesk.com/products/3ds-max/overview" target="_blank">3ds Max</a>
+            <p class="app-description">Программа для 3D-моделирования и анимации, используемая для создания игр, фильмов и визуализаций архитектурных проектов.</p>
+        </li>
+        
+        <li><img src="https://www.substance3d.com/favicon.ico" alt="Substance by Adobe">
+            <a href="https://www.substance3d.com" target="_blank">Substance by Adobe</a>
+            <p class="app-description">Набор инструментов для создания текстур и материалов, который интегрируется с ведущими 3D-редакторами и игровыми движками.</p>
+        </li>
+        
+        <li><img src="https://www.maxon.net/favicon.ico" alt="Cinema 4D">
+            <a href="https://www.maxon.net/en/cinema-4d" target="_blank">Cinema 4D</a>
+            <p class="app-description">Программное обеспечение для 3D-моделирования и анимации, известное своей простотой в использовании и мощными инструментами для создания анимации и визуализаций.</p>
+        </li>
+        
+        <li><img src="https://www.autodesk.com/favicon.ico" alt="Fusion 360">
+            <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank">Fusion 360</a>
+            <p class="app-description">Интегрированная платформа для 3D-дизайна, инженерии и производства, предлагающая возможности для моделирования, симуляции и совместной работы.</p>
+        </li>
+        
+        <li><img src="https://www.tinkercad.com/favicon.ico" alt="Tinkercad">
+            <a href="https://www.tinkercad.com" target="_blank">Tinkercad</a>
+            <p class="app-description">Онлайн-инструмент для 3D-дизайна и моделирования, идеально подходящий для начинающих и образовательных целей.</p>
+        </li>
+        
+        <li><img src="https://www.daz3d.com/favicon.ico" alt="Daz 3D">
+            <a href="https://www.daz3d.com" target="_blank">Daz 3D</a>
+            <p class="app-description">Программное обеспечение для 3D-рендеринга и анимации, предлагающее обширную библиотеку готовых моделей и материалов.</p>
+        </li>
+        
+        <li><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0WIiAdHx8kKDQsJCYxJx0fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGislHyU3Mjc3NzctNTU3Nzc4NS0tKzc1Ljc1ODU3Nzc0NzU3NzcyNTU3Nzc1NzU3Ky0uNTU1N//AABEIABsAHAMBEQACEQEDEQH/xAAXAAADAQAAAAAAAAAAAAAAAAAEBQYC/8QAKBAAAgECBAUEAwAAAAAAAAAAAQIDABEEBSFBBhITInExUWHBQmKB/8QAGgEAAgIDAAAAAAAAAAAAAAAAAgUDBAABBv/EACIRAAICAQQBBQAAAAAAAAAAAAACAQMRBBIhMRMFMkFhwf/aAAwDAQACEQMRAD8AG4eyl85zEQC4hRTJM4/FR9k2A8/FXZnBSVcyU0/CWVwoZHkmVB6lpAPqsJYRSSzeLBx3fL1kMKerO1yw96XV65Xv8eMR+jK/0tqtP5M8x3H0Lb31Bq8Ki2yHNYMo4fdMFB1MViDzTzPoBY6KBvYeNSaFvdkmrWNoLLjZMa3PLKXb2O38os5DiCc66wLd3VV/Y6Gkr1w/Z1G/b2LjLHzHoOenftuKb1NLJEt2ctqEVLWhOhvl2J5C8DntkGnw1GxFW2JwDY7M+mTHhTd93G3iqr2Y4gY06eZ5YRGNpJu8s29yb6VBXXubHwT32bF3T2FBNKvigNNERgUiqsrBRYVgcSaWhNm60Yf/2Q==" alt="Meshmixer">
+            <a href="https://www.meshmixer.com" target="_blank">Meshmixer</a>
+            <p class="app-description">Многофункциональный инструмент для работы с 3D-моделями, идеальный для подготовки объектов к 3D-печати.</p>
+        </li>
+        
+        <li><img src="https://www.pixologic.com/favicon.ico" alt="Sculptris">
+            <a href="https://pixologic.com/sculptris/" target="_blank">Sculptris</a>
+            <p class="app-description">Простой в использовании инструмент для 3D-скульптинга, идеально подходящий для начинающих художников.</p>
+        </li>
+
+        <li><img src="https://www.openscad.org/favicon.ico" alt="OpenSCAD">
+            <a href="https://www.openscad.org" target="_blank">OpenSCAD</a>
+            <p class="app-description">Программа для создания 3D-моделей с использованием сценариев, идеально подходящая для инженеров и разработчиков.</p>
+        </li>
+        
+        <li><img src="https://www.wings3d.com/favicon.ico" alt="Wings 3D">
+            <a href="https://www.wings3d.com" target="_blank">Wings 3D</a>
+            <p class="app-description">Мощный инструмент для создания интерактивных прототипов и диаграмм.</p>
+        </li>
+
+        <li><img src="https://www.solidworks.com/favicon.ico" alt="SolidWorks">
+            <a href="https://www.solidworks.com" target="_blank">SolidWorks</a>
+            <p class="app-description">Мощное программное обеспечение для 3D CAD, широко используемое в инженерном проектировании и разработке продуктов.</p>
+        </li>
+    </ul>
+    <div class="footer">
+        <p>&copy; 2024 TopAPPS. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://t.me/FamilFG" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
+                
+            </a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
+                
+            </a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
+                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
+                
+            </a>
+        </div>
+    </div>
+</body>
+</html>
