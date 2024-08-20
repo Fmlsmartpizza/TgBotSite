@@ -5,183 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Откройте для себя лучшие приложения в различных категориях. Подборки инструментов для дизайна, программирования, продуктивности и многих других задач.">
     <meta name="keywords" content="приложения, дизайн, программирование, продуктивность, веб-разработка, обработка видео, музыкальная продукция, 3D моделирование, безопасность, обучение, электронная коммерция">
-
-    <title>Категории приложений</title>
+    <title>TopAPPS</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    background-color: #0026fcb0; 
-    margin: 0;
-    padding: 0;
-}
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f7f7f7;
+        }
 
-.header {
-    position: relative;
-    background: url('https://images.pexels.com/photos/23475/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
-    color: #fff;
-    padding: 90px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 70vh;
+            background: url('https://images.pexels.com/photos/6153738/pexels-photo-6153738.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            padding-top: 40px;
+        }
 
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
-    z-index: -1; /* Помещаем фон за текст */
-}
+        .contact-btn {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.header h1 {
-    margin: 0;
-    font-size: 3em;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
+        .contact-btn:hover {
+            background-color: #ffffff;
+            color: #007bff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
 
-.header p {
-    margin: 15px 0;
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #f5f5f5;
-}
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+        .header p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-.category {
-    background: #ffffff; /* Белый фон для блоков */
-    padding: 25px;
-    margin: 25px 0;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень для выделения */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
 
-.category img {
-    width: 70px;
-    height: 70px;
-}
+        .category {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.category a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-    font-weight: bold;
-}
+        .category img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
 
-.category a:hover {
-    color: #007bff;
-}
-.footer {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
+        .category a {
+            display: block;
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+        }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px; 
-}
+        .category button {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 0.9em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
 
-.footer a img {
-    width: 24px; 
-    height: 24px; 
-}
+        .category button:hover {
+            background-color: #0056b3;
+        }
 
-.footer a:hover {
-    color: #007bff;
-}
+        .category:hover {
+            transform: translateY(-5px);
+        }
 
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #444;
+            margin-top: 40px;
+        }
 
+        .footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        .footer .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .footer .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .scroll-down-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .scroll-down-btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .category {
+                padding: 20px;
+            }
+
+            .category img {
+                width: 40px;
+                height: 40px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
+        <button class="contact-btn" onclick="window.location.href='contacts.html';">Контакты</button>
         <h1>Категории приложений</h1>
-        <p>Найдите идеальные инструменты для всех видов задач и проектов! Можете подписаться на наши соц-сети чтобы следить за нашими новостями</p>
-        
+        <p>Откройте для себя лучшие приложения в различных категориях. Подборки инструментов для дизайна, программирования, продуктивности и многих других задач.</p>
     </div>
     
-    <div class="container">
+    <div id="categories" class="container">
+        <h2>Категории</h2>
         <div class="category">
-            <img src="https://img.icons8.com/color/48/design--v1.png" alt="3D icon"> 
+            <img src="https://img.icons8.com/color/48/design--v1.png" alt="Design icon"> 
             <a href="design.html">Дизайн</a>
+            <button onclick="window.location.href='design.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/fluency/48/online-coding.png" alt="Design icon"> 
+            <img src="https://img.icons8.com/fluency/48/online-coding.png" alt="Coding icon"> 
             <a href="coding.html">Программирование</a>
+            <button onclick="window.location.href='coding.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/color/48/tasklist.png" alt="Design icon"> 
+            <img src="https://img.icons8.com/color/48/tasklist.png" alt="Productivity icon"> 
             <a href="tasks.html">Продуктивность</a>
+            <button onclick="window.location.href='tasks.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/color/48/backend-development--v1.png" alt="Design icon"> 
+            <img src="https://img.icons8.com/color/48/backend-development--v1.png" alt="Web development icon"> 
             <a href="webdev.html">Веб-разработка</a>
+            <button onclick="window.location.href='webdev.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/color/48/video-trimming.png" alt="Programming icon"> 
+            <img src="https://img.icons8.com/color/48/video-trimming.png" alt="Video editing icon"> 
             <a href="videoediting.html">Обработка видео</a>
+            <button onclick="window.location.href='videoediting.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/color/48/music.png" alt="Music icon"> 
+            <img src="https://img.icons8.com/color/48/music.png" alt="Music production icon"> 
             <a href="music.html">Музыкальная продукция</a>
+            <button onclick="window.location.href='music.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/?size=100&id=65231&format=png&color=000000" alt="Music icon"> 
+            <img src="https://img.icons8.com/?size=100&id=8VKmypQxqy6T&format=png&color=000000" alt="3D modeling icon"> 
             <a href="3d.html">3D Моделирование</a>
+            <button onclick="window.location.href='3d.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/?size=100&id=16238&format=png&color=000000" alt="Music icon"> 
+            <img src="https://img.icons8.com/?size=100&id=QxCNeyN8FjjO&format=png&color=000000" alt="Security icon"> 
             <a href="security.html">Безопасность</a>
+            <button onclick="window.location.href='security.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/?size=100&id=6eqd76mdaKPI&format=png&color=000000" alt="Music icon"> 
+            <img src="https://img.icons8.com/?size=100&id=6eqd76mdaKPI&format=png&color=000000" alt="Education icon"> 
             <a href="educ.html">Обучение</a>
+            <button onclick="window.location.href='educ.html'">Перейти</button>
         </div>
         <div class="category">
-            <img src="https://img.icons8.com/color/48/online-store.png" alt="Music icon"> 
+            <img src="https://img.icons8.com/color/48/online-store.png" alt="E-commerce icon"> 
             <a href="commer.html">Электронная коммерция</a>
+            <button onclick="window.location.href='commer.html'">Перейти</button>
         </div>
     </div>
+    
     <div class="footer">
         <p>Следите за нами:</p>
         <p>&copy; 2024 TopAPPS. Все права защищены.</p>
         <div class="social-icons">
-            <a href="https://t.me/FamilFG" target="_blank">
-                <img src="https://img.icons8.com/color/24/000000/telegram-app.png" alt="Telegram" />
-                Telegram
-            </a>
-            <a href="https://www.instagram.com/famil.fg/" target="_blank">
-                <img src="https://img.icons8.com/color/24/000000/instagram.png" alt="Instagram" />
-                Instagram
-            </a>
-            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">
-                <img src="https://img.icons8.com/color/24/000000/discord.png" alt="Discord" />
-                Discord
-            </a>
+            <a href="https://t.me/FamilFG" target="_blank">Telegram</a>
+            <a href="https://www.instagram.com/famil.fg/" target="_blank">Instagram</a>
+            <a href="https://discord.com/channels/@pizza.at.home/" target="_blank">Discord</a>
         </div>
-        
     </div>
+
+    <!-- Scroll Down Button -->
+    <button class="scroll-down-btn" onclick="document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });">⬇️</button>
 </body>
 </html>
